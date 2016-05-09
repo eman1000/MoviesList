@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="1">
+
+
+    <TextView
+        android:id="@+id/movieTitle"
+
+        style="@style/MovieTitle"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/movieImage"
+        android:layout_gravity="center_horizontal"
+        android:layout_toRightOf="@+id/movieImage"
+        android:layout_weight="0.07"
+        android:text="Large Text"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <ImageView
+        android:id="@+id/movieImage"
+        style="@style/MovieImage"
+        android:src="@drawable/hail" />
+
+    <TextView
+        android:id="@+id/textView"
+        style="@style/MoreInfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/movieImage"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:text="more info..."
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+
+
+</RelativeLayout>
